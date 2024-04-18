@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>数字藏经洞</title>
+    <style>
+        /* Your custom styles here */
+        body {
+            background-image: url("images/sutra background image.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: :column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color:#0c5922; /* 更改底部背景颜色 */
+            color: #fff; /* 更改底部文字颜色 */
+            padding: 10px 0; /* 添加内边距 */
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px; /* 更改底部文字大小 */
+        }
+
+        /* Add black shadow to white text */
+        body {
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .btn {
+            background-color: #0a481c;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #0a481c;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            margin: 15% auto;
+            padding: 20px;
+            width: 60%;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="cave.html">洞窟实录</a></li>
+            <li><a href="mural.html">壁画图鉴</a></li>
+            <li><a href="sutra.html">数字藏经洞</a></li>
+            <li><a href="contact us.html">联系我们</a></li>
+        </ul>
+    </nav>
+    <main>
+        <button class="btn" onclick="openModal()">点击此处进入游戏</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="images/QRCode.jpg" alt="QR Code" style="width: 50%; height: auto;">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 云赏敦煌</p>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("btn")[0];
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>洞窟实录</title>
+    <style>
+        /* Reset some default styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: "楷体", cursive; /* 更换字体 */
+        }
+
+        /* Style the navigation */
+        nav {
+            background-color: #0c5922; /* 更换导航栏背景颜色 */
+            padding: 20px 0; /* 添加内边距 */
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px; /* 更改字体大小 */
+        }
+
+        nav ul li a:hover {
+            color: #d3d618; /* 更改鼠标悬停时的字体颜色 */
+        }
+
+        /* Style the main content */
+        main {
+            padding: 20px; /* 添加内边距 */
+            text-align: center; /* 居中文字 */
+        }
+
+        main h2 {
+            font-family: "楷体", cursive; /* 更换标题字体为楷体 */
+            font-size: 36px; /* 更改标题字体大小 */
+            margin-bottom: 20px; /* 添加标题与内容之间的间距 */
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            width: 300px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item p {
+            font-family: "楷体", cursive; /* 更换文字字体为楷体 */
+            font-size: 16px; /* 更改文字大小 */
+            margin-top: 10px; /* 添加文字与图片之间的间距 */
+            text-align: justify;
+            color:black
+        }
+
+        /* Add hover effect */
+        .gallery-item:hover {
+            transform:scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="cave.html">洞窟实录</a></li>
+            <li><a href="mural.html">壁画图鉴</a></li>
+            <li><a href="sutra.html">数字藏经洞</a></li>
+            <li><a href="contact us.html">联系我们</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>敦煌洞窟实录</h2>
+        <div class="gallery">
+            <div class="gallery-column">
+                <div class="gallery-item">
+                    <img src="images/cave1.jpg" alt="敦煌洞窟1">
+                    <p>莫高窟第254窟建于北魏。洞窟位于莫高窟崖面中层，是莫高窟最早的中心塔柱式洞窟。 洞窟前部为人字披顶，人字披南北两端模仿汉式传统木构建筑形式，承托有木质斗拱。在东西两披上浮塑有数条凸起的椽子，椽间饰以手持莲花、忍冬的天人图案。 洞窟后部为平顶，中央有方形中心塔柱，连接窟顶和地面。中心柱四面开龛。</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cave2.jpg" alt="敦煌洞窟2">
+                    <p>莫高窟第285窟开凿于西魏大统年间（主室北壁发愿文中存有西魏大统四年（538年）、五年（539年记年），是敦煌石窟中最早有确切开凿年代的洞窟。主室为覆斗顶形窟，平面为方形。窟室中央现存一元代所建的方形坛台，南壁和北壁对称地各开凿4个小禅室。部分禅室内或门口还残留有元代所修小塔的部分塔身。窟顶中心方井画华盖式藻井。四披绘中国传统神话诸神与佛教护法神形象，有摩尼宝珠、力士、飞天、雷公、乌获畏兽、伏羲、女娲等。四披下部一周绘有36身禅僧于山间、草庐中坐禅。山林间绘有各种野兽及捕猎场景。</p>
+                </div>
+            </div>
+            <div class="gallery-column">
+                <div class="gallery-item">
+                    <img src="images/cave3.jpg" alt="敦煌洞窟3">
+                    <p>莫高窟第420窟创建于隋，宋、西夏重绘部分壁画，主室为覆斗形顶，南、西、北壁各开一龛，被称为“三龛窟”。主室窟顶为斗四莲花藻井，花饰三兔纹样井心。藻井内岔角绘童子形飞天，外岔绘有翼兽，方井外框饰以忍冬狮子联珠纹。四边垂幔铺于四披。四披绘有大幅的经变场画。各场面间以树石花卉、塔庙寺院、流泉莲池、行云飞花等景物作为分隔。但由于四披画面稠密繁杂，加之变色严重，其中的一些画面识读起来十分困难，因此学术界对该窟四披内容的认识也存在争论，主要分为“法华经变说”和“法华经变与涅槃经变说”。本解说以“法华经变说”为准。</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cave4.jpg" alt="敦煌洞窟4">
+                    <p>莫高窟第322窟建于初唐，五代重修，覆斗形殿堂式小型窟。主室西壁开双层龛，内塑一佛、二弟子、二菩萨、二天王，塑像共七身。天王像鼻高翼宽，浓眉大眼，类似胡人形象。窟顶藻井绘缠枝葡萄纹井心，垂角幔帷铺于四披。井心最外层绘飞天十六身，环绕藻井飞行。窟顶四披均绘千佛。四披与四壁之间连接处镶于藤枝。南壁绘千佛，千佛中央绘有弥勒说法图一铺。北壁绘千佛，千佛中央绘阿弥陀经变一铺。东壁门上绘说法图三铺；门南侧绘药师说法图。北侧为一立式弟子像，像四周有四身供养人。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 云赏敦煌</p>
+    </footer>
+</body>
+</html>
